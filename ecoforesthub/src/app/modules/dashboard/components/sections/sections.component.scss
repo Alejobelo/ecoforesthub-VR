@@ -1,0 +1,58 @@
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.bg-section1 {
+  background-color: #ffcc00;
+}
+
+.bg-section2 {
+  background-color: #66cc66;
+}
+
+.bg-section3 {
+  background-color: #3399ff;
+}
+
+.animate-slide {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.animate-slide.ng-leave {
+  animation: slideOut 0.5s ease-in-out;
+}
+
+.dashboard{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 100%;
+}
+.graphic{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 1;
+  text-align: center;
+  justify-content: center;
+}
+.table{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: #3399ff;
+}

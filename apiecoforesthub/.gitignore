@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environments
+.env
+.venv
+venv/
+env/
+env_bak/
+*.env
+
+# Dependency directories
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+dist/
+build/
+bin/
+
+# Logs
+*.log
+
+# Docker
+Dockerfile
+docker-compose.yml
+docker-compose.override.yml
+*.dockerignore
+
+# Visual Studio Code
+.vscode/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# SQLite database files
+*.sqlite3
+*.db
+
+# IDE files
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

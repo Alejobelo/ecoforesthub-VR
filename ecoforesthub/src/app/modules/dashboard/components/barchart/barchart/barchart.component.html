@@ -1,0 +1,15 @@
+<ng-container *ngIf="shouldRenderChart">
+  <canvas
+    baseChart
+    class="chart"
+    [data]="barChartData"
+    [options]="barChartOptions"
+    [plugins]="barChartPlugins"
+    [type]="barChartType"
+    (chartHover)="chartHovered($event)"
+    (chartClick)="chartClicked($event)"
+  ></canvas>
+</ng-container>
+<ng-container *ngIf="!shouldRenderChart">
+  <div>No hay datos disponibles para mostrar el gráfico.</div>
+</ng-container>

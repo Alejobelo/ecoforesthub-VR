@@ -1,0 +1,40 @@
+<div class="flex flex-row">
+  <div *ngIf="currentSection === 1" class="flex-1 animate-slide dashboard">
+
+    <div class="graphic">
+      <app-barchart></app-barchart>
+    </div>
+  </div>
+  <div *ngIf="currentSection === 2" class="flex-1 bg-section2 animate-slide">
+    <div class="p-16">
+      <table class="min-w-full bg-white border border-gray-300">
+        <thead>
+          <tr>
+            <th class="py-2 px-4 border-b">Date</th>
+            <th class="py-2 px-4 border-b">Name</th>
+            <th class="py-2 px-4 border-b">Description</th>
+            <th class="py-2 px-4 border-b">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="text-center">
+            <td class="py-2 px-4 border-b">2023-11-13</td>
+            <td class="py-2 px-4 border-b">John Doe</td>
+            <td class="py-2 px-4 border-b">Lorem ipsum dolor sit amet.</td>
+            <td class="py-2 px-4 border-b">
+              <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">
+                Edit
+              </button>
+            </td>
+          </tr>
+          <!-- Puedes agregar más filas según sea necesario -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div *ngIf="currentSection === 3" class="flex-1 bg-section3 animate-slide">
+    3
+  </div>
+</div>
+
+

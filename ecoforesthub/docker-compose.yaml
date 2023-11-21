@@ -1,0 +1,7 @@
+version: '3'
+services:
+  web:
+    image: ecoforesthub  # Usa el nombre de la imagen que creaste con tu Dockerfile
+    ports:
+      - "9000:80"  # Mapea el puerto 9000 de tu máquina host al puerto 80 del contenedor
+

@@ -1,0 +1,25 @@
+.link{
+  text-decoration: none;
+  color: inherit;
+  padding: 10px;
+  position: relative;
+}
+.link:after{
+  content:"";
+  width: 0;
+  height: 4px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition: all .5s;
+  will-change: width;
+}
+.link:hover:after{
+  width: 100%;
+  right: 0;
+}
+
+.link.active {
+  border-bottom: 2px solid green;  /* Puedes ajustar el estilo según tus preferencias */
+}

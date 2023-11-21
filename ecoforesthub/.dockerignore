@@ -1,0 +1,12 @@
+node_modules
+/node_modules
+.editorconfig
+.firebase
+/
+dist
+.git
+/spec
+/gitignore
+/docs
+.angular
+
